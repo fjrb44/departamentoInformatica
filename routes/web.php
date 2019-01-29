@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::resource('ciclos', 'CicloController');
+
+Route::get('/', 'StaticController@index');
+Route::get('/miembros', 'MiembroController@index');
+Route::get('/perfil/{id}', 'MiembroController@show');
+Route::get('/curso/{id}', 'CursoController@show');
