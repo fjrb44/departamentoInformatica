@@ -1,6 +1,6 @@
 <div class="row">
         <div class="col-4">
-            <h2>Departamento informatica </h2>
+            <h2>Departamento de informática </h2>
         </div>    
 
 
