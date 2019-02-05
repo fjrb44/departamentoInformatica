@@ -11,4 +11,12 @@
     color: #A8CFFF;
 }
 
+.container-footer a {
+    text-decoration: none;
+    color: #A8CFFF;
+}
+
+.container-footer a:hover{
+    color: white;
+}
 /*********************************************************/
