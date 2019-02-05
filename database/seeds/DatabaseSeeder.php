@@ -16,6 +16,9 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
 
         $this->call(UsersTableSeeder::class);
+        $this->call(ModulosTableSeeder::class);
+        $this->call(ImpartesTableSeeder::class);
+        $this->call(TramosHorariosTableSeeder::class);
 
         // Reactiva
         Model::reguard();

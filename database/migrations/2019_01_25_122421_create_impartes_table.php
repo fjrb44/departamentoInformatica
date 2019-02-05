@@ -18,6 +18,9 @@ class CreateImpartesTable extends Migration
             $table->integer('miembro_id');
             $table->integer('modulo_id');
             $table->timestamps();
+
+            $table->foreign('miembro_id')->references('id')->on('miembros');
+            $table->foreign('modulo_id')->references('id')->on('modulos');
         });
     }
 

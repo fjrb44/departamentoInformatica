@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Miembro extends Model
 {
-    //
+    // No usar
 }
