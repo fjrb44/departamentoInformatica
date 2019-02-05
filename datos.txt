@@ -1,0 +1,88 @@
+
+Técnico en Sistemas Microinformáticos y Redes
+La competencia general de este título consiste en instalar, configurar y mantener sistemas microinformáticos, aislados o en red, así como redes locales en pequeños entornos, asegurando su funcionalidad y aplicando los protocolos de calidad, seguridad y respeto al medio ambiente establecidos.
+
+Entorno profesional
+
+1. Este profesional ejerce su actividad principalmente en empresas del sector servicios que se dediquen a la comercialización, montaje y reparación de equipos,
+redes y servicios microinformáticos en general, como parte del soporte informático de la organización o en entidades de cualquier tamaño y sector productivo que utilizan sistemas microinformáticos y redes de datos para su gestión.
+
+2. Las ocupaciones y puestos de trabajo más relevantes son los siguientes:
+
+- Técnico instalador-reparador de equipos informáticos.
+- Técnico de soporte informático.
+- Técnico de redes de datos.
+- Reparador de periféricos de sistemas microinformáticos.
+- Comercial de microinformática.
+- Operador de tele-asistencia.
+- Operador de sistemas. 
+
+	Módulos profesionales
+	Primero
+
+		Cod. 	Módulo 	H.SEM.
+		0223 	Aplicaciones ofimáticas 	8
+		0229 	Formación y orientación laboral 	3
+		0221 	Montaje y mantenimiento de equipo 	7
+		0225 	Redes locales 	7
+		0222 	Sistemas operativos monopuesto 	5
+	
+	Segundo
+
+		Cod. 	Módulo 	H.SEM.
+		0228 	Aplicaciones web 	4
+		0230 	Empresa e iniciativa emprendedora 	4
+		0231 	Formación en centros de trabajo 	0
+		0000 	Horas de libre configuración 	3
+		0226 	Seguridad informática 	5
+		0227 	Servicios en red 	7
+		0224 	Sistemas operativos en red 	7
+
+
+Técnico Superior en Desarrollo de Aplicaciones Web
+La competencia general de este título consiste en desarrollar, implantar, y mantener aplicaciones web, con independencia del modelo empleado y utilizando tecnologías específicas, garantizando el acceso a los datos de forma segura y cumpliendo los criterios de accesibilidad, usabilidad y calidad exigidas en los estándares establecidos.
+
+Entorno profesional
+
+1. Las personas con este perfil profesional ejercen su actividad en empresas o entidades públicas o privadas tanto por cuenta ajena como propia, desempeñando su trabajo en el área de desarrollo de aplicaciones informáticas relacionadas con entornos Web (intranet, extranet e internet).
+
+2. Las ocupaciones y puestos de trabajo más relevantes son:
+
+- Programador Web.
+- Programador Multimedia.
+- Desarrollador de aplicaciones en entornos Web.
+
+	Módulos Profesionales
+	Primero
+
+		Cod. 	Módulo 	H.SEM.
+		0484 	Bases de Datos 	6
+		0487 	Entornos de desarrollo 	3
+		0617 	Formación y orientación laboral 	3
+		0373 	Lenguajes de marcas y sistemas de gestión de información 	4
+		0485 	Programación 	8
+		0483 	Sistemas informáticos 	6
+
+	Segundo
+
+		Cod. 	Módulo 	H.SEM.
+		0612 	Desarrollo web en entorno cliente 	6
+		0613 	Desarrollo web en entorno servidor 	8
+		0614 	Despliegue de aplicaciones web 	3
+		0615 	Diseño de interfaces WEB 	6
+		0618 	Empresa e iniciativa emprendedora 	4
+		0619 	Formación en centros de trabajo 	0
+		0000 	Horas de libre configuración 	3
+		0616 	Proyecto de desarrollo de aplicaciones web 	0
+
+apellidos;nombre;email;telefono;url;email_visible;telefono_visible;url_visible;jefe_departamento;admin_web
+Bueno Santana;Francisco Javier;javier.bueno@iesvegademijas.es;;;1;0;0;0;0
+Bustamante Toledo;Javier;javier.bustamante@iesvegademijas.es;;;1;0;0;0;0
+Gonzalez Alcantara;Sandra;sandra.gonzalez@iesvegademijas.es;;;1;0;0;0;0
+Ramírez Valderrama;Lázaro;lazaro.ramirez@iesvegademijas.es;;;1;0;0;0;1
+Ramis Canicio;Ginés;gines.ramis@iesvegademijas.es;;;1;0;0;1;0
+Ramos Cózar;Abrahám;abraham.ramos@iesvegademijas;;;1;0;0;0;0
+Rojano Cueto;Paco;paco.rojano@iesvegademijas.es;;;1;0;0;0;0
+Sánchez León;Juan Carlos;juancarlos.sanchez@iesvegademijas.es;;;1;0;0;0;0
+Sarmiento Guerrero;Miguel Ángel;miguelangel.sarmiento@iesvegadmijas.es;;;1;0;0;0;0
+Villa Brieva;Ricardo;ricardo.villa@iesvegademijas.es;;;1;0;0;0;1

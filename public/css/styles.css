@@ -42,3 +42,25 @@
     margin-bottom: 5px;
 }
 /* FIN CSS HEADER */
+
+/*********************Estilo Footer********************/
+
+
+.container-footer{
+    background-color: #083254;
+    padding: 30px 0;
+}
+
+.container-footer p{
+    color: #A8CFFF;
+}
+
+.container-footer a {
+    text-decoration: none;
+    color: #A8CFFF;
+}
+
+.container-footer a:hover{
+    color: white;
+}
+/*********************************************************/
