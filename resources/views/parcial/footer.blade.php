@@ -6,12 +6,15 @@
 
 </div> -->
 
-<footer class="">
-    <div class="container">
+<footer class="footer">
+<div class="fixed-bottom p-y">
+    <div class="container-footer">
         <div class="row">
-          <div class="col-lg-6 h-100 text-center my-auto">
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Dto. Informática IES Vega de Mijas© 2018.</p>
+          <div class="col-lg-12 h-100 text-center my-auto">
+            <p class="mb-4 mb-lg-0">&copy; Dto. Informática IES Vega de Mijas© 2018.</p>
           </div>
         </div>
     </div>
-</footer>
+    </div>    
+</footer> 
+
