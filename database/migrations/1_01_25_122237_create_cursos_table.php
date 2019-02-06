@@ -18,6 +18,9 @@ class CreateCursosTable extends Migration
             $table->string('nombre');
             $table->string('codigo');
             $table->timestamps();
+
+            $table->integer('ciclo_id')->unsigned();
+            $table->foreign('ciclo_id')->references('id')->on('ciclos');
         });
     }
 

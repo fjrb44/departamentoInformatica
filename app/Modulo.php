@@ -13,4 +13,8 @@ class Modulo extends Model
     public function tramos_horarios() {
         return $this->belongsToMany('App\TramoHorario', 'horarios');
     }
+
+    public function links() {
+        return $this->morphMany('App\Link', 'linkable');
+    }
 }

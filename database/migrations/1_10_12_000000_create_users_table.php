@@ -17,8 +17,9 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('apellidos');
-            $table->string('telefono');
+            $table->string('telefono')->nullable();
             $table->string('email')->unique();
+            $table->string('url')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('codigo');
@@ -26,9 +27,13 @@ class CreateUsersTable extends Migration
             $table->boolean('jefe_dept')->default(false);;
             $table->boolean('mostrar_telefono')->default(false);;
             $table->boolean('mostrar_email')->default(false);;
+            $table->boolean('mostrar_url')->default(false);;
             $table->string('foto')->default('');
             $table->rememberToken();
             $table->timestamps();
+
+            $table->string('curso_id');
+            $table->foreign('curso_id')->references('id')->on('cursos');
         });
     }
 

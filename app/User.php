@@ -33,4 +33,8 @@ class User extends Authenticatable
     public function modulos() {
         return $this->belongsToMany('App\Modulo', 'impartes', 'miembro_id');
     }
+
+    public function curso() {
+        return $this->belongsTo('App\Curso');
+    }
 }

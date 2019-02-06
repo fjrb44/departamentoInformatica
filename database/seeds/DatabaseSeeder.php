@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
         // Desactiva la protección de Inserts en la BD
         Model::unguard();
 
-        $this->call(UsersTableSeeder::class);
+        $this->call(CiclosTableSeeder::class);
         $this->call(ModulosTableSeeder::class);
+        $this->call(CursosTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
         $this->call(ImpartesTableSeeder::class);
-        $this->call(TramosHorariosTableSeeder::class);
 
         // Reactiva
         Model::reguard();

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCiclosTable extends Migration
+class CreateLinksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreateCiclosTable extends Migration
      */
     public function up()
     {
-        Schema::create('ciclos', function (Blueprint $table) {
+        Schema::create('links', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre');
-            $table->string('siglas');
+            $table->string('link');
+            $table->string('texto_visible');
             $table->timestamps();
+
+            // Relación con Modulo / Ciclo
+            $table->integer('parent_id')->unsigned();
+            $table->string('parent_type');
         });
     }
 
@@ -28,6 +32,6 @@ class CreateCiclosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ciclos');
+        Schema::dropIfExists('links');
     }
 }
