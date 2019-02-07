@@ -20,8 +20,8 @@ class CreateLinksTable extends Migration
             $table->timestamps();
 
             // Relación con Modulo / Ciclo
-            $table->integer('parent_id')->unsigned();
-            $table->string('parent_type');
+            $table->integer('linkable_id')->unsigned();
+            $table->string('linkable_type');
         });
     }
 
