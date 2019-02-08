@@ -1,0 +1,10 @@
+﻿Ciclos - id, nombre, siglas (Completa)
+Interfaz (Nada)
+Cursos - id, nombre, codcurso, idciclo (Completa)
+Links - id, link, visibleText, idTabla, controlador (Links de prueba)
+Horarios - idmodulo, idTHorario (Vacía)
+Tramos Horarios - id, dia, hora, inicio, fin, text (Completa)
+Modulos - id, nombre, sigla, numeroHoras, codModulo (Completa)
+Miembros - id, nombre, apellidos, tlf, correo, url, contraseña, codigoMiembro, admin, jefeDepart,
+	tlf_visible, correo_visible, url_visible, foto (Faltan tlf, contraseña, codigoMiembro y foto
+Imparte - idMiembro, idModulo (Vacía)
