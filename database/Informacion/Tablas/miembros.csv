@@ -1,0 +1,11 @@
+id,nombre,apellidos,tlf,correo,url,contraseña,codigoMiembro,admin,jefeDepart,tlf_visible,correo_visible,url_visible,foto,curso_id
+,Francisco Javier,Bueno Santana,,javier.bueno@iesvegademijas.es,,,,0,0,0,1,0,,1
+,Javier,Bustamante Toledo,,javier.bustamante@iesvegademijas.es,,,,0,0,0,1,0,,1
+,Sandra,Gonzalez Alcantara,,sandra.gonzalez@iesvegademijas.es,,,,0,0,0,1,0,,1
+,Lázaro,Ramírez Valderrama,,lazaro.ramirez@iesvegademijas.es,,,,1,0,0,1,0,,1
+,Ginés,Ramis Canicio,,gines.ramis@iesvegademijas.es,,,,0,1,0,1,0,,1
+,Abrahám,Ramos Cózar,,abraham.ramos@iesvegademijas,,,,0,0,0,1,0,,1
+,Paco,Rojano Cueto,,paco.rojano@iesvegademijas.es,,,,0,0,0,1,0,,1
+,Juan Carlos,Sánchez León,,juancarlos.sanchez@iesvegademijas.es,,,,0,0,0,1,0,,1
+,Miguel Ángel,Sarmiento Guerrero,,miguelangel.sarmiento@iesvegadmijas.es,,,,0,0,0,1,0,,1
+,Ricardo,Villa Brieva,,ricardo.villa@iesvegademijas.es,,,,1,0,0,1,0,,1
