@@ -14,6 +14,6 @@
 Route::resource('ciclos', 'CicloController');
 
 Route::get('/', 'StaticController@index');
-Route::get('/miembros', 'MiembroController@index');
-Route::get('/perfil/{id}', 'MiembroController@show');
 Route::get('/curso/{id}', 'CursoController@show');
+
+Route::resource('miembros', 'MiembroController');
