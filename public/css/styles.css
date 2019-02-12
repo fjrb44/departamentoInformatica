@@ -5,6 +5,7 @@
     background-color: #083254;
     font-size: 1.5em;
     color: #A8CFFF;
+   
 }
 
 .titulo_header{
@@ -41,6 +42,13 @@
     background-color:#083254;
     margin-bottom: 5px;
 }
+
+
+.nav-item{
+    background-color: '';
+    font-size: 0.8em;
+}
+
 /* FIN CSS HEADER */
 
 /*********************Estilo Footer********************/

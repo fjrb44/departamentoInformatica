@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/app.css" />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
+
     <body>
         <header>@include('parcial.header')</header>
         <div class="container-fluid">@yield('contenido')</div>
