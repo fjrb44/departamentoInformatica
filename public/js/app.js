@@ -36478,8 +36478,8 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/mario/git_repos/Departamento/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/mario/git_repos/Departamento/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\34622\Desktop\DepartamentoInformatica\DepartamentoInformatica\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\34622\Desktop\DepartamentoInformatica\DepartamentoInformatica\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
