@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Miembro;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class MiembroController extends Controller
 {
@@ -14,7 +16,8 @@ class MiembroController extends Controller
      */
     public function index()
     {
-        return view('miembro.index');
+        $miembros = DB::table('miembros')->get();
+        return view('miembro.index', [ "miembros" =>  $miembros]);
     }
 
     /**
