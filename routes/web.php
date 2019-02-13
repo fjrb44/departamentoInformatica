@@ -17,3 +17,4 @@ Route::get('/', 'StaticController@index');
 Route::get('/curso/{id}', 'CursoController@show');
 
 Route::resource('miembros', 'MiembroController');
+Route::resource('interfazs', 'InterfazController');

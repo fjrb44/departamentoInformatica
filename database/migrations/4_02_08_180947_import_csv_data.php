@@ -176,6 +176,7 @@ class ImportCsvData extends Migration
                 $csv_data->mostrar_url = $data[12];
                 $csv_data->foto = $data[13];
                 $csv_data->curso_id = $data[14];
+                $csv_data->descripcion = $data[15];
                 $csv_data->save ();
             }
             fclose($handle);

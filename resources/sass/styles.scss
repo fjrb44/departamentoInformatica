@@ -1,50 +1,43 @@
 /*HEADER*/
 
-#header{
-
+#header {
     background-color: #083254;
     font-size: 1.5em;
-    color: #A8CFFF;
-   
+    color: #a8cfff;
 }
 
-.titulo_header{
-
+.titulo_header {
     text-decoration: none;
-    color: #A8CFFF;
-
+    color: #a8cfff;
 }
 
-.titulo_header:hover{
-
+.titulo_header:hover {
     text-decoration: none;
-    color: #FFF;
-
+    color: #fff;
 }
-.container-fluid nav a{
-    color: #A8CFFF;
-}
-
-.container-fluid nav a:hover{
-    color: #FFF;
+.container-fluid nav a {
+    color: #a8cfff;
 }
 
-.navbar-toggler{
+.container-fluid nav a:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
     width: 47px;
     height: 34px;
-    background-color: #FFF;
-    border:none;
+    background-color: #fff;
+    border: none;
 }
-.navbar-toggler .line{
+.navbar-toggler .line {
     width: 100%;
     float: left;
     height: 2px;
-    background-color:#083254;
+    background-color: #083254;
     margin-bottom: 5px;
 }
 
-
-.nav-item{
+.nav-item {
     background-color: '';
     font-size: 0.8em;
 }
@@ -53,22 +46,21 @@
 
 /*********************Estilo Footer********************/
 
-
-.container-footer{
+.container-footer {
     background-color: #083254;
     padding: 30px 0;
 }
 
-.container-footer p{
-    color: #A8CFFF;
+.container-footer p {
+    color: #a8cfff;
 }
 
 .container-footer a {
     text-decoration: none;
-    color: #A8CFFF;
+    color: #a8cfff;
 }
 
-.container-footer a:hover{
+.container-footer a:hover {
     color: white;
 }
 /*********************************************************/
