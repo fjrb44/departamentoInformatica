@@ -48,7 +48,7 @@ class MiembroController extends Controller
      */
     public function show(Miembro $miembro)
     {
-        return view('miembro.show');
+        return view('miembro.show', [ "miembro" => $miembro]);
     }
 
     /**
