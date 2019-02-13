@@ -7,8 +7,8 @@
 
         <title>@yield('titulo', 'Dto Informática')</title>
 
-        <link rel="stylesheet" href="css/app.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="/css/app.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
     </head>
 
     <body>
