@@ -46,7 +46,7 @@ class InterfazController extends Controller
      */
     public function show(Interfaz $interfaz)
     {
-        //
+        return $interfaz;
     }
 
     /**
@@ -69,7 +69,10 @@ class InterfazController extends Controller
      */
     public function update(Request $request, Interfaz $interfaz)
     {
-        //
+        $interfaz->texto = $request->input('texto', 'ERROR');
+        $interfaz->save();
+
+        return $interfaz;
     }
 
     /**

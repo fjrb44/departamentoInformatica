@@ -29,6 +29,7 @@ class CreateUsersTable extends Migration
             $table->boolean('mostrar_email')->default(false);;
             $table->boolean('mostrar_url')->default(false);;
             $table->string('foto')->default('');
+            $table->string('descripcion')->default('');
             $table->rememberToken();
             $table->timestamps();
 
