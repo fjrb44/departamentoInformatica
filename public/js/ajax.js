@@ -16,6 +16,9 @@ function init(){
         button = document.createElement("button");
         button.textContent = "Editar";
         button.addEventListener("click", clickiti);
+        
+        button.classList.add('btn');
+        button.classList.add('btn-primary');
 
         editables[i].appendChild(button);
 
