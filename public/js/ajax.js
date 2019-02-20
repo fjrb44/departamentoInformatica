@@ -12,14 +12,14 @@ function init(){
     var editables = document.getElementsByClassName("editable");
 
     for(var i = 0, length = editables.length; i<length; i++){
-        //button = editables[i].getElementsByTagName("button")[0];
+
         button = document.createElement("button");
         button.textContent = "Editar";
         button.addEventListener("click", clickiti);
 
         editables[i].appendChild(button);
+
     }
-    //button.addEventListener("click", clickiti);
 }
 
 function clickiti(e){
@@ -29,6 +29,7 @@ function clickiti(e){
 
     if(editar){
         var input = document.createElement("input");
+        
         input.value = editar.textContent;
         parent.insertBefore(input, editar);
         parent.removeChild(editar);
@@ -39,26 +40,23 @@ function clickiti(e){
         p.textContent = input.value;
         parent.insertBefore(p, input);
         parent.removeChild(input);
+
+        postData(parent.dataset.tabla, parent.dataset.id, parent.dataset.atributo, p.textContent);
     }
 }
 
 function postData(tabla, id, atributo, dAtributo, e){
-    //console.log(e);
-    //e.preventDefault();
+    if(!dAtributo) return
 
-    //var texto = $("input[name=texto]").val();
     var datos = {};
     var url = '/'+tabla+'/'+id;
     datos[atributo] = dAtributo;
-
-    console.log(url);
 
     $.ajax({
         type:'PUT',
         url:url,
         data: datos,
         success:function(data){
-            alert(data.success);
         }
     });
 

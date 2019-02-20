@@ -23,6 +23,9 @@
                 <button class="btn btn-success btn-submit">Submit</button>
             </div>
         </form>
+        <div class="editable" data-tabla="interfazs" data-id="1" data-atributo="texto">
+            <p>Datos de la bd</p>
+        </div>
     </div>
 
     <script src= {{ url("./js/ajax.js") }}></script>
