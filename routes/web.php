@@ -11,12 +11,14 @@
 |
 */
 
-Route::resource('ciclos', 'CicloController');
 
-Route::get('/', 'StaticController@index');
-Route::get('/curso/{id}', 'CursoController@show');
+Route::get('/', 'StaticController@getIndex');
 
-Route::resource('miembros', 'MiembroController');
-Route::resource('interfazs', 'InterfazController');
+Route::get('/miembros', 'MiembroController@index');
+Route::get('/miembros/{miembro}', 'MiembroController@show');
+
+Route::get('/ciclos', 'CicloController@index');
+Route::get('/ciclos/{ciclo}', 'CicloController@show');
+
 
 Route::get('/prueba', 'StaticController@prueba');

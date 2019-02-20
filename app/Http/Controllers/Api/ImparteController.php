@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\ControllersApi;
 
-use App\Interfaz;
+use App\Imparte;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class InterfazController extends Controller
+class ImparteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,21 +42,21 @@ class InterfazController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Interfaz  $interfaz
+     * @param  \App\Imparte  $imparte
      * @return \Illuminate\Http\Response
      */
-    public function show(Interfaz $interfaz)
+    public function show(Imparte $imparte)
     {
-        return $interfaz;
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Interfaz  $interfaz
+     * @param  \App\Imparte  $imparte
      * @return \Illuminate\Http\Response
      */
-    public function edit(Interfaz $interfaz)
+    public function edit(Imparte $imparte)
     {
         //
     }
@@ -64,24 +65,21 @@ class InterfazController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Interfaz  $interfaz
+     * @param  \App\Imparte  $imparte
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Interfaz $interfaz)
+    public function update(Request $request, Imparte $imparte)
     {
-        $interfaz->texto = $request->input('texto', 'ERROR');
-        $interfaz->save();
-
-        return $interfaz;
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Interfaz  $interfaz
+     * @param  \App\Imparte  $imparte
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Interfaz $interfaz)
+    public function destroy(Imparte $imparte)
     {
         //
     }

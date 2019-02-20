@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\User as Miembro;
+use App\Curso;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
-
-class MiembroController extends Controller
+class CursoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,7 @@ class MiembroController extends Controller
      */
     public function index()
     {
-        $miembros = Miembro::all();
-        return view('miembros.index')->with(compact('miembros'));
+        //
     }
 
     /**
@@ -44,21 +42,21 @@ class MiembroController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Miembro  $miembro
+     * @param  \App\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function show(Miembro $miembro)
+    public function show(Curso $curso)
     {
-        return view('miembros.show')->with(compact('miembro'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Miembro  $miembro
+     * @param  \App\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function edit(Miembro $miembro)
+    public function edit(Curso $curso)
     {
         //
     }
@@ -67,10 +65,10 @@ class MiembroController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Miembro  $miembro
+     * @param  \App\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Miembro $miembro)
+    public function update(Request $request, Curso $curso)
     {
         //
     }
@@ -78,10 +76,10 @@ class MiembroController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Miembro  $miembro
+     * @param  \App\Curso  $curso
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Miembro $miembro)
+    public function destroy(Curso $curso)
     {
         //
     }

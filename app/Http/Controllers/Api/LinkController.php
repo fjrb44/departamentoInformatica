@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Horario;
+use App\Link;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class HorarioController extends Controller
+class LinkController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class HorarioController extends Controller
      */
     public function index()
     {
-        //
+        return "Links";
     }
 
     /**
@@ -41,10 +42,10 @@ class HorarioController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Horario  $horario
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function show(Horario $horario)
+    public function show(Link $link)
     {
         //
     }
@@ -52,10 +53,10 @@ class HorarioController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Horario  $horario
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function edit(Horario $horario)
+    public function edit(Link $link)
     {
         //
     }
@@ -64,10 +65,10 @@ class HorarioController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Horario  $horario
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Horario $horario)
+    public function update(Request $request, Link $link)
     {
         //
     }
@@ -75,10 +76,10 @@ class HorarioController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Horario  $horario
+     * @param  \App\Link  $link
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Horario $horario)
+    public function destroy(Link $link)
     {
         //
     }

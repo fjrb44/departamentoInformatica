@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Link;
+use App\Ciclo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class LinkController extends Controller
+class CicloController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class LinkController extends Controller
      */
     public function index()
     {
-        //
+        return Ciclo::all();
     }
 
     /**
@@ -41,10 +42,10 @@ class LinkController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Link  $link
+     * @param  \App\Ciclo  $ciclo
      * @return \Illuminate\Http\Response
      */
-    public function show(Link $link)
+    public function show(Ciclo $ciclo)
     {
         //
     }
@@ -52,10 +53,10 @@ class LinkController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Link  $link
+     * @param  \App\Ciclo  $ciclo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Link $link)
+    public function edit(Ciclo $ciclo)
     {
         //
     }
@@ -64,10 +65,10 @@ class LinkController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Link  $link
+     * @param  \App\Ciclo  $ciclo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Link $link)
+    public function update(Request $request, Ciclo $ciclo)
     {
         //
     }
@@ -75,10 +76,10 @@ class LinkController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Link  $link
+     * @param  \App\Ciclo  $ciclo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Link $link)
+    public function destroy(Ciclo $ciclo)
     {
         //
     }

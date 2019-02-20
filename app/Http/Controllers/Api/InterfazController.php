@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Ciclo;
+use App\Interfaz;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class CicloController extends Controller
+class InterfazController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class CicloController extends Controller
      */
     public function index()
     {
-        return "hola";
+        //
     }
 
     /**
@@ -41,21 +42,21 @@ class CicloController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Ciclo  $ciclo
+     * @param  \App\Interfaz  $interfaz
      * @return \Illuminate\Http\Response
      */
-    public function show(Ciclo $ciclo)
+    public function show(Interfaz $interfaz)
     {
-        //
+        return $interfaz;
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Ciclo  $ciclo
+     * @param  \App\Interfaz  $interfaz
      * @return \Illuminate\Http\Response
      */
-    public function edit(Ciclo $ciclo)
+    public function edit(Interfaz $interfaz)
     {
         //
     }
@@ -64,21 +65,24 @@ class CicloController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Ciclo  $ciclo
+     * @param  \App\Interfaz  $interfaz
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Ciclo $ciclo)
+    public function update(Request $request, Interfaz $interfaz)
     {
-        //
+        $interfaz->texto = $request->input('texto', 'ERROR');
+        $interfaz->save();
+
+        return $interfaz;
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Ciclo  $ciclo
+     * @param  \App\Interfaz  $interfaz
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Ciclo $ciclo)
+    public function destroy(Interfaz $interfaz)
     {
         //
     }

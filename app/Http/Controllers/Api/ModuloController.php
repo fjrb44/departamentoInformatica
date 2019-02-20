@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Imparte;
+use App\Modulo;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class ImparteController extends Controller
+class ModuloController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class ImparteController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Imparte  $imparte
+     * @param  \App\Modulo  $modulo
      * @return \Illuminate\Http\Response
      */
-    public function show(Imparte $imparte)
+    public function show(Modulo $modulo)
     {
         //
     }
@@ -52,10 +53,10 @@ class ImparteController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Imparte  $imparte
+     * @param  \App\Modulo  $modulo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Imparte $imparte)
+    public function edit(Modulo $modulo)
     {
         //
     }
@@ -64,10 +65,10 @@ class ImparteController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Imparte  $imparte
+     * @param  \App\Modulo  $modulo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Imparte $imparte)
+    public function update(Request $request, Modulo $modulo)
     {
         //
     }
@@ -75,10 +76,10 @@ class ImparteController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Imparte  $imparte
+     * @param  \App\Modulo  $modulo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Imparte $imparte)
+    public function destroy(Modulo $modulo)
     {
         //
     }

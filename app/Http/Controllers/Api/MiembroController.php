@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\User as Miembro;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 
 class MiembroController extends Controller
@@ -16,8 +17,7 @@ class MiembroController extends Controller
      */
     public function index()
     {
-        $miembros = Miembro::all();
-        return view('miembros.index')->with(compact('miembros'));
+        //
     }
 
     /**
@@ -49,7 +49,7 @@ class MiembroController extends Controller
      */
     public function show(Miembro $miembro)
     {
-        return view('miembros.show')->with(compact('miembro'));
+        //
     }
 
     /**
