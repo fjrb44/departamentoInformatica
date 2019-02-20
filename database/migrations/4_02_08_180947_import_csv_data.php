@@ -12,7 +12,7 @@ class ImportCsvData extends Migration
     private $tables = [
         'ciclos',
         'cursos',
-        /* 'horarios', */
+        'horarios',
         /* 'impartes', */
         /* 'interfazs', */
         'links',
@@ -73,7 +73,6 @@ class ImportCsvData extends Migration
         }
 
         // Horarios
-        /*
         if (($handle = fopen ( $ruta . '/horarios.csv', 'r' )) !== FALSE) {
             $primera_linea = true;
             while (($data = fgetcsv($handle, ',')) !== FALSE) {
@@ -84,13 +83,12 @@ class ImportCsvData extends Migration
                 }
 
                 $csv_data = new App\Horario();
-                $csv_data->modulo_id = $data[0];
-                $csv_data->tramo_horario_id = $data[1];
+                $csv_data->modulo_id = $data[1];
+                $csv_data->tramo_horario_id = $data[2];
                 $csv_data->save ();
             }
             fclose($handle);
         }
-        */
 
         // Imparte
         /*
