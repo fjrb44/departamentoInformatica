@@ -14,15 +14,15 @@
                 <h5 class="card-subtitle mb-2 text-muted">Jefe Departamento</h5>
                 @endif
                 <p class="card-text">
-                    <h6><i class="fa fa-phone" aria-hidden="true"></i>
                     @if($miembro->mostrar_telefono)
+                    <h6><i class="fa fa-phone" aria-hidden="true"></i>
                     956952653 {{$miembro->telefono}}
                     @endif
                     </h6> 
                 </p>
                 <p class="card-text">
-                    <h6><i class="fa fa-envelope" aria-hidden="true"></i>
                      @if($miembro->mostrar_email)
+                     <h6><i class="fa fa-envelope" aria-hidden="true"></i>
                      {{$miembro->email}}
                      @endif
                      </h6>
