@@ -1,24 +1,25 @@
-   
 <div class="container-fluid py-2" id="header">
-
     <div class="row">
-        <div class="col-10 col-sm-10 col-md-10
+        <div
+            class="col-10 col-sm-10 col-md-10
             mt-2 mt-sm-2 mt-md-2 mt-lg-3 order-1 order-md-0"
         >
-            <a href="#" class="titulo_header">
-                <h2>Departamento de informática </h2>
+            <a href="{{ url('/') }}" class="titulo_header">
+                <h2>Departamento de informática</h2>
             </a>
-        </div>    
+        </div>
 
-        <div class=" col-2 col-sm-2 d-flex justify-content-sm-end order-0 order-md-1">
+        <div
+            class=" col-2 col-sm-2 d-flex justify-content-sm-end order-0 order-md-1"
+        >
             <nav class="navbar navbar-expand-md">
-                <button 
-                    class="navbar-toggler" 
-                    type="button" 
-                    data-toggle="collapse" 
-                    data-target="#navbarNavAltMarkup" 
-                    aria-controls="navbarNavAltMarkup" 
-                    aria-expanded="false" 
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
                     <span>
@@ -27,12 +28,14 @@
                         <i class="line"></i>
                     </span>
                 </button>
-             
+
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ">
-                        <a class="nav-item nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Miembros</a>
-                        <a class="nav-item nav-link" href="#">Login</a>
+                      <a class="nav-item nav-link active" href="{{ url('/') }}"
+                            >Inicio <span class="sr-only">(current)</span></a
+                        >
+                        <a class="nav-item nav-link" href="{{ url('/miembros') }}">Miembros</a>
+                        <a class="nav-item nav-link" href="{{ url('/login') }}">Login</a>
                     </div>
                 </div>
             </nav>
