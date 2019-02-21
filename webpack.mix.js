@@ -11,7 +11,23 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix.js('resources/js/app.js', 'public/js')
-//   .extract(["bootstrap", "axios", "popper.js", "jquery"]);
+mix.js('resources/js/app.js', 'public/js')
+  .extract(["bootstrap", "axios", "popper.js", "jquery"]);
 
-mix.sass('resources/sass/app.scss', 'public/css');
+mix.sass('resources/sass/app.scss', 'public/css')
+
+mix.browserSync({
+    host: '192.168.10.10',
+    proxy: 'departamento.test',
+    open: false,
+    files: [
+      'app/**/*.php',
+      'resources/views/**/*.php',
+      'public/js/**/*.js',
+      'public/css/**/*.css'
+    ],
+    watchOptions: {
+        usePolling: true,
+        interval: 500
+    }
+});
