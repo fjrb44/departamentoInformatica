@@ -1,27 +1,27 @@
-id,nombre,sigla,numeroHoras,codModulo
-,Aplicaciones ofimáticas,SMR_AOF,8,223
-,Formación y orientación laboral,SMR_FOL,3,229
-,Montaje y mantenimiento de equipo,SMR_MME,7,221
-,Redes locales,SMR_RL,7,225
-,Sistemas operativos monopuesto,SMR_SOM,5,222
-,Aplicaciones web,SMR_AW,4,228
-,Empresa e iniciativa emprendedora,SMR_EIE,4,230
-,Formación en centros de trabajo,SMR_FCT,0,231
-,Horas de libre configuración,SMR_HLC,3,0
-,Seguridad informática,SMR_SEGI,5,226
-,Servicios en red,SMR_SR,7,227
-,Sistemas operativos en red,SMR_SOR,7,224
-,Bases de Datos,DAW_BD,6,484
-,Entornos de desarrollo,DAW_ED,3,487
-,Formación y orientación laboral,DAW_FOL,3,617
-,Lenguajes de marcas y sistemas de gestión de información,DAW_LM,4,373
-,Programación,DAW_PRO,8,485
-,Sistemas informáticos,DAW_SI,6,483
-,Desarrollo web en entorno cliente,DAW_DWEC,6,612
-,Desarrollo web en entorno servidor,DAW_DWES,8,613
-,Despliegue de aplicaciones web,DAW_DAW,3,614
-,Diseño de interfaces WEB,DAW_DIW,6,615
-,Empresa e iniciativa emprendedora,DAW_EIE,4,618
-,Formación en centros de trabajo,DAW_FCT,0,619
-,Horas de libre configuración,DAW_HLC,3,0
-,Proyecto de desarrollo de aplicaciones web,DAW_PDAW,0,616
+id,nombre,sigla,numeroHoras,codModulo,curso_id
+,Aplicaciones ofimáticas,SMR_AOF,8,223,1
+,Formación y orientación laboral,SMR_FOL,3,229,1
+,Montaje y mantenimiento de equipo,SMR_MME,7,221,1
+,Redes locales,SMR_RL,7,225,1
+,Sistemas operativos monopuesto,SMR_SOM,5,222,1
+,Aplicaciones web,SMR_AW,4,228,1
+,Empresa e iniciativa emprendedora,SMR_EIE,4,230,1
+,Formación en centros de trabajo,SMR_FCT,0,231,1
+,Horas de libre configuración,SMR_HLC,3,0,1
+,Seguridad informática,SMR_SEGI,5,226,1
+,Servicios en red,SMR_SR,7,227,1
+,Sistemas operativos en red,SMR_SOR,7,224,1
+,Bases de Datos,DAW_BD,6,484,1
+,Entornos de desarrollo,DAW_ED,3,487,1
+,Formación y orientación laboral,DAW_FOL,3,617,1
+,Lenguajes de marcas y sistemas de gestión de información,DAW_LM,4,373,1
+,Programación,DAW_PRO,8,485,1
+,Sistemas informáticos,DAW_SI,6,483,1
+,Desarrollo web en entorno cliente,DAW_DWEC,6,612,1
+,Desarrollo web en entorno servidor,DAW_DWES,8,613,1
+,Despliegue de aplicaciones web,DAW_DAW,3,614,1
+,Diseño de interfaces WEB,DAW_DIW,6,615,1
+,Empresa e iniciativa emprendedora,DAW_EIE,4,618,1
+,Formación en centros de trabajo,DAW_FCT,0,619,1
+,Horas de libre configuración,DAW_HLC,3,0,1
+,Proyecto de desarrollo de aplicaciones web,DAW_PDAW,0,616,1

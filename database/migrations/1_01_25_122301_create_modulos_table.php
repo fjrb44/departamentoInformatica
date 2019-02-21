@@ -19,7 +19,10 @@ class CreateModulosTable extends Migration
             $table->string('siglas');
             $table->integer('num_horas')->unsigned();
             $table->string('codigo');
+            $table->integer('curso_id')->unsigned()->nullable();
             $table->timestamps();
+
+            $table->foreign('curso_id')->references('id')->on('cursos');
         });
     }
 

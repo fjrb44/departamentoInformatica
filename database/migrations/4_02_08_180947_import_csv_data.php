@@ -195,6 +195,7 @@ class ImportCsvData extends Migration
                 $csv_data->siglas = $data[2];
                 $csv_data->num_horas = $data[3];
                 $csv_data->codigo = $data[4];
+                $csv_data->curso_id = $data[5];
                 $csv_data->save ();
             }
             fclose($handle);

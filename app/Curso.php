@@ -13,4 +13,8 @@ class Curso extends Model
     public function miembros() {
         return $this->hasMany('App\User');
     }
+
+    public function modulos() {
+        return $this->hasMany('App\Modulo');
+    }
 }
