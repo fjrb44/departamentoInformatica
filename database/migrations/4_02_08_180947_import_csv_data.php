@@ -112,7 +112,6 @@ class ImportCsvData extends Migration
         */
 
         // Interfaces
-        /*
         if (($handle = fopen ( $ruta . '/interfazs.csv', 'r' )) !== FALSE) {
             $primera_linea = true;
             while (($data = fgetcsv($handle, ',')) !== FALSE) {
@@ -123,12 +122,12 @@ class ImportCsvData extends Migration
                 }
 
                 $csv_data = new App\Interfaz();
-                $csv_data->algo = $data[1];
+                $csv_data->localizacion = $data[0];
+                $csv_data->texto = $data[1];
                 $csv_data->save ();
             }
             fclose($handle);
         }
-        */
 
         // Links
         if (($handle = fopen ( $ruta . '/links.csv', 'r' )) !== FALSE) {
