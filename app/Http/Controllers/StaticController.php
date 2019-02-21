@@ -9,7 +9,10 @@ use Illuminate\Http\Request;
 class StaticController extends Controller
 {
     public function getIndex() {
-        return view('static.index');
+        $ciclos = Ciclo::all();
+
+        return view('static.index')
+            ->with(compact('ciclos'));
     }
 
     public function prueba() {
