@@ -17,4 +17,8 @@ class Curso extends Model
     public function modulos() {
         return $this->hasMany('App\Modulo');
     }
+
+    public function tutor() {
+        return $this->belongsTo('App\User', 'tutor_id');
+    }
 }

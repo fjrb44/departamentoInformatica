@@ -21,6 +21,9 @@ class CreateCursosTable extends Migration
 
             $table->integer('ciclo_id')->unsigned();
             $table->foreign('ciclo_id')->references('id')->on('ciclos');
+
+            $table->integer('tutor_id')->unsigned()->nullable();
+            $table->foreign('tutor_id')->references('id')->on('miembros');
         });
     }
 

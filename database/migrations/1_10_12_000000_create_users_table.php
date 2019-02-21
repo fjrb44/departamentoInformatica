@@ -24,17 +24,14 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('codigo');
             $table->boolean('admin')->default(false);
-            $table->boolean('jefe_dept')->default(false);;
-            $table->boolean('mostrar_telefono')->default(false);;
-            $table->boolean('mostrar_email')->default(false);;
-            $table->boolean('mostrar_url')->default(false);;
+            $table->boolean('jefe_dept')->default(false);
+            $table->boolean('mostrar_telefono')->default(false);
+            $table->boolean('mostrar_email')->default(false);
+            $table->boolean('mostrar_url')->default(false);
             $table->string('foto')->default('');
             $table->string('descripcion')->default('');
             $table->rememberToken();
             $table->timestamps();
-
-            $table->string('curso_id');
-            $table->foreign('curso_id')->references('id')->on('cursos');
         });
     }
 
