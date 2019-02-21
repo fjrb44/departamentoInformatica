@@ -17,8 +17,8 @@ Route::get('/', 'StaticController@getIndex');
 Route::get('/miembros', 'MiembroController@index');
 Route::get('/miembros/{miembro}', 'MiembroController@show');
 
-Route::get('/ciclos', 'CicloController@index');
-Route::get('/ciclos/{ciclo}', 'CicloController@show');
+Route::get('/cursos', 'CursoController@index');
+Route::get('/cursos/{curso}', 'CursoController@show');
 
 
 Route::get('/prueba', 'StaticController@prueba');
