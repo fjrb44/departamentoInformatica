@@ -19,9 +19,9 @@
         <div class="col offset-lg-3">
             <h4>Links</h4>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                @foreach ($curso->links as $link)
+                    <li><a href="{{ $link->link }}">{{ $link->texto_visible }}</a></li>
+                @endforeach
             </ul>
         </div>
     </div>

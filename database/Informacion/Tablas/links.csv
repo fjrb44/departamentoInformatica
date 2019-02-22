@@ -1,7 +1,7 @@
 id,link,visibleText,idTabla,controlador
-,https://www.google.com/,Google,1,App\Ciclo
+,https://www.google.com/,Google,1,App\Curso
 ,https://www.yahoo.com/,Yahoo,5,App\Modulo
-,https://www.google.com/,Google,2,App\Ciclo
+,https://www.google.com/,Google,2,App\Curso
 ,https://www.yahoo.com/,Yahoo,3,App\Modulo
 ,https://www.bing.com/,Binh,4,App\Modulo
 ,https://www.duckduckgo.com/,DuckDuckGo,4,App\Modulo
