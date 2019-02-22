@@ -21,4 +21,8 @@ class Curso extends Model
     public function tutor() {
         return $this->belongsTo('App\User', 'tutor_id');
     }
+
+    public function links() {
+        return $this->morphMany('App\Link', 'linkable');
+    }
 }

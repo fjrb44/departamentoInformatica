@@ -32,7 +32,7 @@ class ImportCsvData extends Migration
 
         Schema::disableForeignKeyConstraints();
 
-        $ruta = 'database/Informacion/Tablas';
+        $ruta = database_path('/Informacion/Tablas');
 
         // Ciclos
         if (($handle = fopen ( $ruta . '/ciclos.csv', 'r' )) !== FALSE) {
