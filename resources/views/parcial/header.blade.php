@@ -2,7 +2,8 @@
     <div class="row">
         <div
             class="col-10 col-sm-10 col-md-10
-            mt-2 mt-sm-2 mt-md-2 mt-lg-3 order-1 order-md-0"
+            mt-2 mt-sm-2 mt-md-2 mt-lg-2
+             order-1 order-md-0"
         >
             <a href="{{ url('/') }}" class="titulo_header">
                 <h2>Departamento de informática</h2>
@@ -10,7 +11,7 @@
         </div>
 
         <div
-            class=" col-2 col-sm-2 d-flex justify-content-sm-end order-0 order-md-1"
+            class=" col-2 col-sm-2 d-flex justify-content-md-end order-0 order-md-1"
         >
             <nav class="navbar navbar-expand-md">
                 <button
