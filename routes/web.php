@@ -22,3 +22,15 @@ Route::get('/cursos/{curso}', 'CursoController@show');
 
 
 Route::get('/prueba', 'StaticController@prueba');
+
+Route::get('/crear', function() {
+    $out = '';
+
+    Artisan::call('migrate:fresh');
+    $out .= Artisan::output();
+
+    Artisan::call('db:seed');
+    $out .= Artisan::output();
+
+    return '<pre>' . $out . '</pre>';
+});
