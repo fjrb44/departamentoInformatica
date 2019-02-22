@@ -11,7 +11,7 @@ class Modulo extends Model
     }
 
     public function tramos_horarios() {
-        return $this->belongsToMany('App\TramoHorario', 'horarios');
+        return $this->belongsToMany('App\TramoHorario', 'horarios', 'modulo_id', 'tramo_horario_id');
     }
 
     public function links() {

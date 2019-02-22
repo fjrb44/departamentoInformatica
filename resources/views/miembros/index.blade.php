@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('contenido')
-    <div class="row">
+    <div class="row justify-content-center">
         @foreach ($miembros as $miembro)
             @if($miembro->jefe_dept)
                 <div class="d-flex justify-content-center">    
@@ -30,7 +30,7 @@
         @foreach ($miembros as $miembro)
             @if(!$miembro->jefe_dept)
                 <div class="d-flex justify-content-center">    
-                    <div class="col-8 col-sm-5 col-md-5 col-lg-4 col-xl-8 mb-2 mt-3">
+                    <div class="col-8 col-sm-5 col-md-5 col-lg-4 col-xl-3 mb-2 mt-3">
                         <a href="/miembros/{{$miembro->id}}" class="custom-card">
                             <div class="card h-100">
                                 <img class="card-img-top w-50 mx-auto d-block" src="https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png">

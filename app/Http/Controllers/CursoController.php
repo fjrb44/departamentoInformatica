@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Curso;
+use App\TramoHorario;
+use App\Horario;
 use Illuminate\Http\Request;
 
 class CursoController extends Controller
@@ -46,7 +48,8 @@ class CursoController extends Controller
      */
     public function show(Curso $curso)
     {
-        return view('cursos.show')->with(compact('curso'));
+        $tramoshorarios = TramoHorario::all();
+        return view('cursos.show')->with(compact('curso', 'tramoshorarios'));
     }
 
     /**
