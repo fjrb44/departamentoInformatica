@@ -15,6 +15,17 @@
                     @endif
 
                     You are logged in!
+
+                    <form action="/crear" method="post" enctype="multipart/form-data">
+                        @csrf
+
+                        <div data-id="{{ $interfaz->find('prueba1')->id }}">
+                            {{ $interfaz->find('prueba1')->texto }}
+                        </div>
+
+                        <input type="file" name="csv">
+                        <input type="submit" value="Subir">
+                    </form>
                 </div>
             </div>
         </div>

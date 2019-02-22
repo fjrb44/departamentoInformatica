@@ -26,3 +26,21 @@ Route::get('/prueba', 'StaticController@prueba');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/crear', function() {
+    $out = '';
+
+    Artisan::call('migrate:fresh');
+    $out .= Artisan::output();
+
+    Artisan::call('db:seed');
+    $out .= Artisan::output();
+
+    return '<pre>' . $out . '</pre>';
+});
+
+Route::post('/crear', function() {
+    request()->csv->storeAs('csv', 'test.csv','local');
+
+    return 'yolo';
+});
