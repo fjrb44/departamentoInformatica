@@ -165,7 +165,7 @@ class ImportCsvData extends Migration
                 $csv_data->telefono = $data[3];
                 $csv_data->email = $data[4];
                 $csv_data->url = $data[5];
-                $csv_data->password = $data[6];
+                $csv_data->password = password_hash($data[6], PASSWORD_DEFAULT);
                 $csv_data->codigo = $data[7];
                 $csv_data->admin = $data[8];
                 $csv_data->jefe_dept = $data[9];
@@ -174,6 +174,7 @@ class ImportCsvData extends Migration
                 $csv_data->mostrar_url = $data[12];
                 $csv_data->foto = $data[13];
                 $csv_data->descripcion = $data[14];
+                $csv_data->isAdmin = $data[15];
                 $csv_data->save ();
             }
             fclose($handle);

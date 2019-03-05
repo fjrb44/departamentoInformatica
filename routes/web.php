@@ -22,3 +22,7 @@ Route::get('/cursos/{curso}', 'CursoController@show');
 
 
 Route::get('/prueba', 'StaticController@prueba');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

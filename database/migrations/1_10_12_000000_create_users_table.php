@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration
             $table->boolean('mostrar_url')->default(false);
             $table->string('foto')->default('');
             $table->string('descripcion')->default('');
+            $table->boolean('isAdmin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
