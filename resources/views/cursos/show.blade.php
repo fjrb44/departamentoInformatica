@@ -27,9 +27,10 @@
     </div>
 
     <div class="row">
-        <table class="table">
+        <table class="table mt-5">
             <thead>
                 <tr>
+                    <th scope="col"></th>
                 @for($i = 0; $i <= 4; $i++)
                     <th scope="col">{{ucfirst($tramoshorarios[$i]->dia)}}</th>
                 @endfor
@@ -38,16 +39,20 @@
             <tbody>
                 <tr>
                 @foreach($tramoshorarios as $tramohorario)
-                    <td scope="row">{{$tramohorario->inicio}} - {{$tramohorario->fin}}
+                    @if (($loop->iteration) % 6 == 1)
+                        <td scope="row">{{$tramohorario->inicio}} - {{$tramohorario->fin}}</td>
+                    @else
+                    <td scope="row">
                         @foreach($curso->modulos as $modulo)
                             @foreach($modulo->tramos_horarios as $tramo)
                                 @if ($tramo->id == $tramohorario->id)
-                                    <p>{{$modulo->nombre}}</p>
+                                    <p><abbr title="{{$modulo->nombre}}">{{substr($modulo->siglas, strpos($modulo->siglas, "_") + 1)}}</abbr></p>
                                 @endif
                             @endforeach
                         @endforeach
                     </td>
-                    @if (($loop->iteration) % 5 == 0)
+                    @endif
+                    @if (($loop->iteration) % 6 == 0)
                         </tr>
                         <tr>
                     @endif
