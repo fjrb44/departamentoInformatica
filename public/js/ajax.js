@@ -26,20 +26,22 @@ function init() {
 function clickiti(e) {
     var t = e.target;
     var parent = t.parentNode;
-    var editar = parent.getElementsByTagName('p')[0];
+    var editar = parent.firstElementChild;
+    var input = parent.getElementsByTagName('input')[0];
 
-    if (editar) {
-        var input = document.createElement('input');
+    if(!editar) return;
+
+    if (!editar.style.display || editar.style.display === "block") {
+        editar.style.display = "none";
+
+        input = document.createElement('input');
 
         input.value = editar.textContent;
-        parent.insertBefore(input, editar);
-        parent.removeChild(editar);
+                
+        parent.insertBefore(input, editar.nextSibling);
     } else {
-        var input = parent.getElementsByTagName('input')[0];
-        var p = document.createElement('p');
+        editar.style.display = "block";
 
-        p.textContent = input.value;
-        parent.insertBefore(p, input);
         parent.removeChild(input);
 
         postData(
