@@ -16,14 +16,6 @@
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
             <h4>{{$curso->tutor->apellidos}} {{$curso->tutor->nombre}}</h4>
         </div>
-        <div class="col offset-lg-3">
-            <h4>Links</h4>
-            <ul>
-                @foreach ($curso->links as $link)
-                    <li><a href="{{ $link->link }}">{{ $link->texto_visible }}</a></li>
-                @endforeach
-            </ul>
-        </div>
     </div>
 
     <div class="row">
@@ -60,8 +52,24 @@
                 </tr>
             </tbody>
         </table>
-
     </div>
+    <br>
+    <div class="list-group list-group-flush">
+        <h4>Módulos del Curso</h4>
+        @foreach($curso->modulos as $modulo)
+            <li class="list-group-item">{{$modulo->nombre}}</li> 
+        @endforeach
+    </div>
+    <br>
+    @if(count($curso->links)!=0)
+    <div class="list-group list-group-flush">
+        <h4>Enlaces</h4>
+        <ul>
+            @foreach($curso->links as $link)
+                <li class="list-group-item"><a href="{{ $link->link }}">{{ $link->texto_visible }}</a></li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
 </div>
-
 @endsection

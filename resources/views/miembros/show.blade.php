@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('contenido')
-
+<!--Datos del profesor/a-->
 <div class="container d-flex justify-content-center mt-5">
     <div class="row">
         <div class="col-6">
@@ -31,7 +31,7 @@
         </div>
     </div>
 </div>
-
+<!--Descripoción del profesor/a-->
 <div class="container d-flex justify-content-center mt-5">
     <div class="row">
             <div class="col-12">
@@ -44,5 +44,5 @@
                 @endif
             </div>
     </div>
-</div>    
+</div>
 @endsection
