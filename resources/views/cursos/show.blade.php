@@ -9,17 +9,19 @@
     </div>
 
     <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-4">
+        <div class="col-xl-2 col-lg-2 col-md-3 col-4">
             <img class="img-top" src="https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
-                alt="photo" width="200">
+                alt="photo" width="120">
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
-            <h4>{{$curso->tutor->apellidos}} {{$curso->tutor->nombre}}</h4>
-        </div>
+
+        <div class="col-xl-6 col-lg-4 col-md-7 col-sm-7 col-7 d-flex align-items-center">
+                <h4>{{$curso->tutor->apellidos}} {{$curso->tutor->nombre}}</h4>
+           </div>
+       
     </div>
 
     <div class="row">
-        <table class="table mt-5">
+        <table class="table mt-4">
             <thead>
                 <tr>
                     <th scope="col"></th>
@@ -64,11 +66,11 @@
     @if(count($curso->links)!=0)
     <div class="list-group list-group-flush">
         <h4>Enlaces</h4>
-        <ul>
+        
             @foreach($curso->links as $link)
                 <li class="list-group-item"><a href="{{ $link->link }}">{{ $link->texto_visible }}</a></li>
             @endforeach
-        </ul>
+        
     </div>
     @endif
 </div>
