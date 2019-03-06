@@ -35,9 +35,9 @@
                 </div>
             @endif
         @endforeach
-        </div>
+    </div>
 
-
+        <div class="container">
         <div class="row d-flex justify-content-center">
         @foreach ($miembros as $miembro)
             @if(!$miembro->jefe_dept)
@@ -46,7 +46,7 @@
                             col-sm-6
                             col-md-4
                             col-lg-4
-                            col-xl-2
+                            col-xl-4
                             mb-2 mt-3">    
                         <a href="/miembros/{{$miembro->id}}" class="custom-card">
                             <div class="h-100">
@@ -62,5 +62,6 @@
             @endif
     
         @endforeach
+        </div>
     </div>
 @endsection

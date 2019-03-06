@@ -2,3 +2,21 @@
     font-size: 2em;
     color:#083254;
 }
+
+@media screen and (min-width: 720px) {
+    .jefe_dpto{
+        font-size: 2em;
+        color:#083254;
+    
+        margin-left: -50px;
+    }
+  }
+
+  @media screen and (min-width: 960px) {
+    .jefe_dpto{
+        font-size: 2em;
+        color:#083254;
+    
+        margin-left: -300px;
+    }
+  }
