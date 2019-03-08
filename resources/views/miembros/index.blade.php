@@ -14,7 +14,7 @@
                                 col-xl-9
                                 mb-2 mt-3">
                         <a href="/miembros/{{$miembro->id}}" class="custom-card">
-                            <div class="card h-100">
+                            <div class="h-100">
                                 <img class="card-img-top w-50 mx-auto d-block mt-3" src="https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png">
                                 <div class="card-body">
                                     <h5 class="card-title d-flex justify-content-center">{{$miembro->nombre}}</h5>
