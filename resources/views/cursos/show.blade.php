@@ -33,9 +33,9 @@
             <tbody>
                 <tr>
                 @foreach($tramoshorarios as $tramohorario)
-                    @if (($loop->iteration) % 6 == 1)
+                    @if (($loop->iteration) % 5 == 1)
                         <td scope="row">{{$tramohorario->inicio}} - {{$tramohorario->fin}}</td>
-                    @else
+                    @endif
                     <td scope="row">
                         @foreach($curso->modulos as $modulo)
                             @foreach($modulo->tramos_horarios as $tramo)
@@ -45,8 +45,7 @@
                             @endforeach
                         @endforeach
                     </td>
-                    @endif
-                    @if (($loop->iteration) % 6 == 0)
+                    @if (($loop->iteration) % 5 == 0)
                         </tr>
                         <tr>
                     @endif
