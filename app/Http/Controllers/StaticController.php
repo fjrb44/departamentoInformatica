@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User as Miembro;
 use App\Ciclo;
 use Illuminate\Http\Request;
+// {{ auth()->user()->isAdmin }}
 
 class StaticController extends Controller
 {
@@ -12,7 +13,8 @@ class StaticController extends Controller
         $ciclos = Ciclo::all();
 
         return view('static.index')
-            ->with(compact('ciclos'));
+            ->with(compact('ciclos'))
+            ->withInterfaz(\App\Interfaz::class);
     }
 
     public function prueba() {

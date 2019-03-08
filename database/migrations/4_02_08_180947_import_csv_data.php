@@ -14,7 +14,7 @@ class ImportCsvData extends Migration
         'cursos',
         'horarios',
         /* 'impartes', */
-        /* 'interfazs', */
+        'interfazs',
         'links',
         'miembros',
         'modulos',

@@ -31,7 +31,13 @@
                  align-items-md-center
                  order-0
                  order-md-1">
-                        <span class="jefe_dpto">Jefe Departamento</span>
+                    @if ( Auth::check() && auth()->user()->admin)
+                        <div class="editable" data-tabla="interfazs" data-id="cargo_jefe" data-atributo="texto">
+                            <span class="jefe_dpto">{{$interfaz::find('cargo_jefe')->texto}}</span>
+                        </div>
+                    @else
+                        <span class="jefe_dpto">{{$interfaz::find('cargo_jefe')->texto}}</span>
+                    @endif
                 </div>
             @endif
         @endforeach

@@ -11,7 +11,14 @@
             <div class="card-body">
                 <h4 class="card-title">{{$miembro->apellidos}} {{$miembro->nombre}}</h4>
                 @if($miembro->jefe_dept)
-                <h5 class="card-subtitle mb-2 text-muted">Jefe Departamento</h5>
+                    @if ( Auth::check() && auth()->user()->admin)
+                        <div class="editable" data-tabla="interfazs" data-id="cargo_jefe" data-atributo="texto">
+                            <h5 class="card-subtitle mb-2 text-muted">{{$interfaz::find('cargo_jefe')->texto}}</h5>
+                        </div>
+                    @else
+                        <p class="mt-3"></p>
+                        <h5 class="card-subtitle mb-2 text-muted">{{$interfaz::find('cargo_jefe')->texto}}</h5>
+                    @endif
                 @endif
                 <p class="card-text">
                     @if($miembro->mostrar_telefono)

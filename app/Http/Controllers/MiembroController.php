@@ -17,7 +17,9 @@ class MiembroController extends Controller
     public function index()
     {
         $miembros = Miembro::all();
-        return view('miembros.index')->with(compact('miembros'));
+        return view('miembros.index')
+            ->with(compact('miembros'))
+            ->withInterfaz(\App\Interfaz::class);
     }
 
     /**
@@ -49,7 +51,7 @@ class MiembroController extends Controller
      */
     public function show(Miembro $miembro)
     {
-        return view('miembros.show')->with(compact('miembro'));
+        return view('miembros.show')->with(compact('miembro'))->withInterfaz(\App\Interfaz::class);
     }
 
     /**

@@ -29,6 +29,7 @@ function clickiti(e) {
     var editar = parent.firstElementChild;
     var input = parent.getElementsByTagName('input')[0];
 
+
     if(!editar) return;
 
     if (!editar.style.display || editar.style.display === "block") {
@@ -41,14 +42,16 @@ function clickiti(e) {
         parent.insertBefore(input, editar.nextSibling);
     } else {
         editar.style.display = "block";
+        
+        editar.textContent = input.value;
 
         parent.removeChild(input);
-
+            
         postData(
             parent.dataset.tabla,
             parent.dataset.id,
             parent.dataset.atributo,
-            p.textContent,
+            editar.textContent,
         );
     }
 }
