@@ -3,7 +3,7 @@
 @section('contenido')
 <div class="container pt-4">
     <div class="row">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-4">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pb-4 mt-4">
             <h2>{{$curso->nombre}}</h2>
         </div>
     </div>
@@ -13,20 +13,24 @@
             <img class="img-top" src="https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
                 alt="photo" width="120">
         </div>
-
+    
         <div class="col-xl-6 col-lg-4 col-md-7 col-sm-7 col-7 d-flex align-items-center">
-                <h4>{{$curso->tutor->apellidos}} {{$curso->tutor->nombre}}</h4>
+                <div class="row">
+              
+                <h4 class="col-12">{{$curso->tutor->apellidos}}, {{$curso->tutor->nombre}}</h4>
+                <h5 class="col-12">Tutor </h5>
+                </div>
            </div>
        
     </div>
 
     <div class="row">
-        <table class="table mt-4">
+        <table class="table mt-5 table-bordered text-center">
             <thead>
                 <tr>
-                    <th scope="col"></th>
+                    <th scope="col" class="table-info"> Horas</th>
                 @for($i = 0; $i <= 4; $i++)
-                    <th scope="col">{{ucfirst($tramoshorarios[$i]->dia)}}</th>
+                    <th scope="col" class="table-info">{{ucfirst($tramoshorarios[$i]->dia)}}</th>
                 @endfor
                 </tr>
             </thead>
@@ -55,16 +59,16 @@
         </table>
     </div>
     <br>
-    <div class="list-group list-group-flush">
-        <h4>Módulos del Curso</h4>
+    <div class="">
+        <h4  class="list-group-item list-group-item-info">Módulos del Curso</h4>
         @foreach($curso->modulos as $modulo)
             <li class="list-group-item">{{$modulo->nombre}}</li> 
         @endforeach
     </div>
     <br>
     @if(count($curso->links)!=0)
-    <div class="list-group list-group-flush">
-        <h4>Enlaces</h4>
+    <div class=" mb-3">
+        <h4 class="list-group-item list-group-item-info">Enlaces</h4>
         
             @foreach($curso->links as $link)
                 <li class="list-group-item"><a href="{{ $link->link }}">{{ $link->texto_visible }}</a></li>
