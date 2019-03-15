@@ -15,7 +15,7 @@
                 <h1 class="display-4 mt-3">{{$interfaz::find('header_ensenianzas')->texto}}</h1>
             </div>
         @else
-            <h1 class="display-4 mt-3">{{$interfaz::find('ense')->texto}}</h1>
+            <h1 class="display-4 mt-3">{{$interfaz::find('header_ensenianzas')->texto}}</h1>
         @endif
 
         @foreach ($ciclos as $ciclo)
